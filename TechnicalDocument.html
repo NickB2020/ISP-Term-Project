@@ -1,0 +1,80 @@
+<html>
+<head>
+<style>
+/* unvisited link */
+a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+</style>
+</head>
+<body>
+
+<h2> Links</h2>
+<p><b><a href="prj.pptm" target="_blank">PPT</a></b></p>
+<p><b><a href="finalReport.docx" target="_blank">final Report</a></b></p>
+
+<body>
+<style>
+body
+{
+	background: lightgreen;
+	margin: 50px;
+}
+</style>
+<h1 style="font-size:300%; text-align:center;"> Techinal Document</h1>
+<h2 style="font-size:200%;"> The Architecture</h2>
+<p style="font-size:150%;"> <b>The architecture of the project is a arcade-style game that stores the score in a php database using html,
+			       javascript, and php.
+			   	 Html is used for the canvas, and for the buttons on screen.
+			   	Encapsulated by the html, javascript is used in an object oriented fashion to create classes for the player, projectiles, and enemeies.
+			   	Many useful methods like random and math, set intveral, set timeout, and splice are used to enable the ememies and proejctiles to work together to function in a game like matter, 
+			       there is an array for both the projectiles and the enemies which use the splice method to elimate from the arrays.
+		  	   	Events and event listeners are used to enable the "clicking" action of the game. I've made a few functions, such as
+				animate which calls for the animation frame, spawn enemies triggers the randomly genereated enemy cirlces and their speed, and a projectile function which does much 
+				the same as the spawn enemies function but for the projectiles shot by the user by clicking. A few other methods such as makePlayer and update are used inside the classes
+				and they primarily deal with creating the the circles for the player, enemies and projectiles ( attributes, color, etc.), as well as updating based on where they should be going if it is a projectile or enemy.
+				There is a sparate html file for the help page, and for the technical page, as well as a php file for adding and deleting the score.
+</p>
+
+<h2 style="font-size:200%;"> The Business Logic</h2>
+
+<p style="font-size:150%;">
+<b>The business logic of this project is a browser internet game that keeps the score and the highest score for the user as the user plays.
+</p>	
+		
+<h2 style="font-size:200%;"> The Database Design</h2>
+
+<p style="font-size:150%;">
+<b>The database design is a php database using phpMyAdmin. Created using a SQL script. The database stores the scores. The score is updated as the user plays and the highest score is also stored.
+</p>
+
+<h2 style="font-size:200%;"> Special Features</h2>
+
+<p style="font-size:150%;">
+<b>Some special features are, the use of the innerwidth and innerheight of the canvasand margin of 0, this allows the game to go the full dimensions of the browser for a better playing experience.
+I have also painstakenly figured out a way to removed the projectiles if they leave the screen to stop animation for a fast game experience.
+As well as the addition of the buttons to take the user back to the game UI from the Help and Technical Docuents without refreshing the page.
+</p>
+
+<h2 style="font-size:200%;"> Contributor: Nick Bischoff</h2>
+<button onclick="window.location.href='http://localhost/isp/prj/prj.html'">Back To Game</button>
+
+
+
+</body>
+</html>

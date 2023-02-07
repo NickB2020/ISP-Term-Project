@@ -1,0 +1,6 @@
+How the database feature works
+
+The data store can be can created and modified through the prj.sql file, the data base is on phpMyAdmin.
+Using the features "Add you score" and "Delete an existing score" on the html page to input the score ID and the points total and clicking
+add your score then click view scores will update the database using the php code. Doing the the same procedure and clicking
+delete an existing score then click view scores will use the php code to remove the score from the database.
